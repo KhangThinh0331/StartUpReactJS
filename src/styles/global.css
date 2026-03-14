@@ -1,0 +1,49 @@
+.card {
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #f0ad4e;
+}
+
+/* Light Yellow Pagination - Coffee Style */
+.pagination {
+  --bs-pagination-color: #8a6d3b; /* chữ nâu */
+  --bs-pagination-bg: #fffbe6; /* nền vàng very light */
+  --bs-pagination-border-color: #ffe58f; /* viền vàng nhạt */
+  --bs-pagination-hover-color: #5c4a1d;
+  --bs-pagination-hover-bg: #fff1b8;
+  --bs-pagination-hover-border-color: #ffd666;
+  --bs-pagination-active-color: #5c4a1d;
+  --bs-pagination-active-bg: #ffe58f;
+  --bs-pagination-active-border-color: #ffd666;
+  --bs-pagination-disabled-color: #d3ad6f;
+  --bs-pagination-disabled-bg: #fffbe6;
+  --bs-pagination-disabled-border-color: #fff1b8;
+}
+
+/* Bo góc & khoảng cách */
+.pagination .page-link {
+  border-radius: 10px;
+  margin: 0 3px;
+  font-weight: 500;
+}
+
+/* Trang active nổi bật hơn */
+.pagination .active .page-link {
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(255, 214, 102, 0.6);
+}
+
+/* Dấu ... */
+.pagination .disabled .page-link,
+.pagination .disabled span {
+  background-color: #fffbe6;
+  color: #d3ad6f;
+  border-color: #fff1b8;
+}
+
+.pagination .page-link {
+  transition: all 0.2s ease;
+}
