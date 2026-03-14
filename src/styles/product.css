@@ -1,0 +1,14 @@
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+.img-product {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
