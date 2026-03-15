@@ -20,12 +20,11 @@ function Home() {
 
 
     useEffect(() => {
-        getProducts({
-            params: { page: current, q: query },
-        }).then(res => {
-            setProducts(res.data.products);
-            setPages(res.data.pages);
-        });
+        getProducts({ page: current, q: query })
+            .then(res => {
+                setProducts(res.data.products);
+                setPages(res.data.pages);
+            });
     }, [current, query]);
 
     const handlePageChange = (page) => {
